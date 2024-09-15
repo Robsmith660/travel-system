@@ -1,0 +1,106 @@
+Passengers:
+
+[{
+  "_id": {
+    "$oid": "66bce5af3bdbd00b1d44317c"
+  },
+  "title": "Mr",
+  "firstName": "John",
+  "surname": "Smith",
+  "phoneNumber": "098-765-1234",
+  "email": "john.doe@gmail.com",
+  "homeAddress": {
+    "addressLine1": "123 Main St",
+    "addressLine2": "",
+    "town": "Galway",
+    "countyCity": "Galway",
+    "eircode": "A12 BC34"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66bd08be3bdbd00b1d44328b"
+  },
+  "title": "x",
+  "firstName": "Tom",
+  "surname": "Ryan",
+  "phoneNumber": "123-456-7890",
+  "email": "tomryan@gmail.com",
+  "homeAddress": {
+    "addressLine1": "123 Main St",
+    "addressLine2": "",
+    "town": "Maynooth",
+    "countyCity": "Kildare",
+    "eircode": "Z12 ZX73"
+  },
+  "__v": 0
+}]
+
+
+Flights:
+
+[{
+  "_id": {
+    "$oid": "66bd0a093bdbd00b1d443298"
+  },
+  "aircraftType": "Eire Airlines",
+  "pilotName": "John Healy",
+  "coPilotName": "James Dunne",
+  "flightNumber": "1234",
+  "homeCountry": "Ireland",
+  "cabinCrew": {
+    "managerName": "Sarah Mahon",
+    "steward1Name": "Tom Harris",
+    "steward2Name": "Emily Smith",
+    "steward3Name": "Michael Brown"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66bd0a593bdbd00b1d44329e"
+  },
+  "aircraftType": "RyanAir",
+  "pilotName": "Tom Ford",
+  "coPilotName": "James Dunne",
+  "flightNumber": "293",
+  "homeCountry": "USA",
+  "cabinCrew": {
+    "managerName": "Sarah Johnson",
+    "steward1Name": "",
+    "steward2Name": "Rob Ryan",
+    "steward3Name": "Bob Smith"
+  },
+  "__v": 0
+}]
+
+
+Bookings:
+
+[{
+  "_id": {
+    "$oid": "66bd0be73bdbd00b1d4432fa"
+  },
+  "bookingDate": {
+    "$date": "2024-10-10T00:00:00.000Z"
+  },
+  "departureCountry": "Ireland",
+  "arrivalCountry": "UK",
+  "passengers": [
+    {
+      "$oid": "66bce5af3bdbd00b1d44317c"
+    },
+    {
+      "$oid": "66bd08be3bdbd00b1d44328b"
+    }
+  ],
+  "flight": {
+    "$oid": "66bd0a093bdbd00b1d443298"
+  },
+  "estimatedLengthOfFlight": 1,
+  "flightType": "Domestic",
+  "numberOfCrewMembers": 3,
+  "complimentaryDrink": "Water",
+  "__v": 0
+}]
